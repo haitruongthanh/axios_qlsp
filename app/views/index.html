@@ -160,40 +160,42 @@
               </button>
             </div>
             <!-- Modal body -->
-            <div class="modal-body">
-              <h5 id="idSp">Id: <span></span></h5>
-              <div class="form-group">
-                <label>Tên Sản Phẩm</label>
-                <input
-                  id="TenSP"
-                  class="form-control"
-                  placeholder="Nhập vào tên sản phẩm"
-                />
+            <form action="|" id="form_sp">
+              <div class="modal-body">
+                <h5 id="idSp">Id: <span></span></h5>
+                <div class="form-group">
+                  <label>Tên Sản Phẩm</label>
+                  <input
+                    id="TenSP"
+                    class="form-control"
+                    placeholder="Nhập vào tên sản phẩm"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Giá</label>
+                  <input
+                    id="GiaSP"
+                    class="form-control"
+                    placeholder="Nhập vào giá"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Hình Ảnh</label>
+                  <input
+                    id="HinhSP"
+                    class="form-control"
+                    placeholder="Nhập vào hình sản phẩm"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="">Loại sản phẩm: </label>
+                  <select class="form-control" id="loaiSP">
+                    <option value="0">Phone</option>
+                    <option value="1">Laptop</option>
+                  </select>
+                </div>
               </div>
-              <div class="form-group">
-                <label>Giá</label>
-                <input
-                  id="GiaSP"
-                  class="form-control"
-                  placeholder="Nhập vào giá"
-                />
-              </div>
-              <div class="form-group">
-                <label>Hình Ảnh</label>
-                <input
-                  id="HinhSP"
-                  class="form-control"
-                  placeholder="Nhập vào hình sản phẩm"
-                />
-              </div>
-              <div class="form-group">
-                <label for="">Loại sản phẩm: </label>
-                <select class="form-control" id="loaiSP">
-                  <option value="0">Phone</option>
-                  <option value="1">Laptop</option>
-                </select>
-              </div>
-            </div>
+            </form>
             <!-- Modal footer -->
             <div class="modal-footer">
               <button

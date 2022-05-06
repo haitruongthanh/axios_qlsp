@@ -5,8 +5,6 @@ console.log("http://loremflickr.com/640/480/technics");
 
 const BASE_URL = "https://6271e18825fed8fcb5ec0d68.mockapi.io";
 
-document.getElementById("btn_update").style.display = "none";
-
 ////////////////////////////////////////// Loading
 
 const turnOnLoading = function () {
@@ -151,3 +149,12 @@ var renderThongTinLenForm = function (sanPham) {
   document.getElementById("HinhSP").value = sanPham.imgUrl;
   document.getElementById("loaiSP").value = sanPham.type ? 1 : 0;
 };
+
+//Hàm ẩn nút cập nhật và reset form
+
+document.getElementById("btnThemSP").addEventListener("click", function () {
+  document.getElementById("form_sp").reset();
+  document.querySelector("#idSp").style.display = "none";
+  document.getElementById("btn_add").style.display = "block";
+  document.getElementById("btn_update").style.display = "none";
+});
